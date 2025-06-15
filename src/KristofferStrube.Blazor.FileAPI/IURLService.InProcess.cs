@@ -1,7 +1,8 @@
-﻿namespace KristofferStrube.Blazor.FileAPI;
-
-public interface IURLServiceInProcess : IURLService
+﻿namespace KristofferStrube.Blazor.FileAPI
 {
-    string CreateObjectURL(Blob obj);
-    void RevokeObjectURL(string url);
+    public interface IURLServiceInProcess : IURLService
+    {
+        string CreateObjectURL(Blob obj);
+        void RevokeObjectURL(string url);
+    }
 }
